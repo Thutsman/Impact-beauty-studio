@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import { Cormorant_Garamond, Outfit } from "next/font/google";
 import "./globals.css";
 
-const logoFile = path.join(process.cwd(), "public", "brand", "impact-beauty-studio-logo.png");
+const markFile = path.join(process.cwd(), "public", "brand", "impact-beauty-studio-mark.png");
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -25,7 +25,9 @@ export const metadata: Metadata = {
     template: "%s · Impact Beauty Studio",
   },
   description: "Premium wig installation and makeup by Vee. Choose a service, pick an available time, and receive confirmation.",
-  icons: existsSync(logoFile) ? { icon: "/brand/impact-beauty-studio-logo.png" } : undefined,
+  icons: existsSync(markFile)
+    ? { icon: "/brand/impact-beauty-studio-mark.png", apple: "/brand/impact-beauty-studio-mark.png" }
+    : undefined,
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

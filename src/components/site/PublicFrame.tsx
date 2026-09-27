@@ -12,6 +12,9 @@ export function SiteHeader({ compact = false }: { compact?: boolean }) {
           <Logo variant={compact ? "compact" : "header"} />
         </Link>
         <nav aria-label="Primary" className="flex items-center gap-4 sm:gap-6">
+          <Link href="/" className="hidden text-[0.72rem] uppercase tracking-[0.16em] text-muted hover:text-foreground sm:inline">
+            Home
+          </Link>
           <Link href="/#work" className="hidden text-[0.72rem] uppercase tracking-[0.16em] text-muted hover:text-foreground sm:inline">
             Work
           </Link>
@@ -42,6 +45,7 @@ export function SiteFooter({ whatsappPhone }: { whatsappPhone?: string | null })
           ) : null}
         </div>
         <div className="flex gap-6 text-[0.72rem] uppercase tracking-[0.16em] text-muted">
+          <Link href="/" className="hover:text-gold">Home</Link>
           <Link href="/#work" className="hover:text-gold">Work</Link>
           <Link href="/book" className="hover:text-gold">Book</Link>
           <Link href="/admin" className="hover:text-gold">Staff</Link>

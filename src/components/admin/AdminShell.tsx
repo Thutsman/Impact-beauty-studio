@@ -35,7 +35,10 @@ function Mark({ logoReady, className }: { logoReady: boolean; className: string 
   }
   return (
     // eslint-disable-next-line @next/next/no-img-element
-    <img src="/brand/impact-beauty-studio-logo.png" alt="Impact Beauty Studio by Vee" className={className} />
+    <span className="inline-flex overflow-hidden rounded-full">
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img src="/brand/impact-beauty-studio-mark.png" alt="Impact Beauty Studio by Vee" className={className} />
+    </span>
   );
 }
 
