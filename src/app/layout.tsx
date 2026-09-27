@@ -21,10 +21,10 @@ const cormorant = Cormorant_Garamond({
 
 export const metadata: Metadata = {
   title: {
-    default: "Impact Beauty Studio by Yvonnie",
+    default: "Impact Beauty Studio by Vee",
     template: "%s · Impact Beauty Studio",
   },
-  description: "Premium wig installation and makeup by Yvonnie. Choose a service, pick an available time, and receive confirmation.",
+  description: "Premium wig installation and makeup by Vee. Choose a service, pick an available time, and receive confirmation.",
   icons: existsSync(logoFile) ? { icon: "/brand/impact-beauty-studio-logo.png" } : undefined,
 };
 

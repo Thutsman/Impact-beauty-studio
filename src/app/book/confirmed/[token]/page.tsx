@@ -57,7 +57,7 @@ export default async function ConfirmedPage({ params }: { params: Promise<{ toke
               })}
               className="inline-flex min-h-12 items-center justify-center border border-line px-6 text-[0.72rem] uppercase tracking-[0.18em] text-gold hover:border-gold"
             >
-              WhatsApp Yvonnie
+              WhatsApp Vee
             </WhatsAppLink>
           ) : null}
         </div>

@@ -14,7 +14,7 @@ export function Logo({ variant = "header" }: { variant?: keyof typeof heights })
       <div className={variant === "hero" ? "max-w-md" : "max-w-[11rem]"}>
         <p className={`font-serif tracking-[0.22em] text-foreground ${variant === "hero" ? "text-5xl sm:text-6xl" : "text-xl"}`}>IMPACT</p>
         <p className="mt-1 text-[0.62rem] uppercase tracking-[0.32em] text-muted">Beauty Studio</p>
-        <p className={`font-serif text-gold ${variant === "hero" ? "mt-2 text-3xl" : "text-sm"}`}>By Yvonnie</p>
+        <p className={`font-serif text-gold ${variant === "hero" ? "mt-2 text-3xl" : "text-sm"}`}>By Vee</p>
         {variant === "hero" ? (
           <p className="mt-4 max-w-xs text-xs leading-5 text-muted">
             Place the official logo at public/brand/impact-beauty-studio-logo.png
@@ -29,7 +29,7 @@ export function Logo({ variant = "header" }: { variant?: keyof typeof heights })
     // eslint-disable-next-line @next/next/no-img-element
     <img
       src="/brand/impact-beauty-studio-logo.png"
-      alt="Impact Beauty Studio by Yvonnie"
+      alt="Impact Beauty Studio by Vee"
       className={`${heights[variant]} w-auto max-w-full object-contain`}
     />
   );

@@ -67,7 +67,7 @@ export function SettingsForm({
       <label className="grid gap-1 text-sm">Minimum notice (minutes)<input name="minNoticeMinutes" type="number" min={0} defaultValue={minNoticeMinutes} /></label>
       <label className="grid gap-1 text-sm">How far ahead clients can book (days)<input name="maxAdvanceDays" type="number" min={1} max={365} defaultValue={maxAdvanceDays} /></label>
       <p className="text-sm text-ink/70">
-        Email reminders are {emailConfigured ? "configured." : "not configured. Add RESEND_API_KEY and NOTIFICATION_FROM_EMAIL, then set CRON_SECRET for the reminder route."} The WhatsApp number is shown on the site so clients can message Yvonnie after they book. Appointments still have to be made on the website.
+        Email reminders are {emailConfigured ? "configured." : "not configured. Add RESEND_API_KEY and NOTIFICATION_FROM_EMAIL, then set CRON_SECRET for the reminder route."} The WhatsApp number is shown on the site so clients can message Vee after they book. Appointments still have to be made on the website.
       </p>
       <button disabled={pending} className="min-h-12 bg-ink text-[0.72rem] uppercase tracking-[0.16em] text-paper" type="submit">Save settings</button>
     </form>

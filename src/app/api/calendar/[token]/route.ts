@@ -25,7 +25,7 @@ export async function GET(_request: Request, context: { params: Promise<{ token:
     `DTSTART:${icsDate(appointment.starts_at)}`,
     `DTEND:${icsDate(appointment.ends_at)}`,
     `SUMMARY:${icsText(`${appointment.service_name} — ${appointment.display_name}`)}`,
-    `DESCRIPTION:${icsText("Appointment with Impact Beauty Studio by Yvonnie")}`,
+    `DESCRIPTION:${icsText("Appointment with Impact Beauty Studio by Vee")}`,
     "END:VEVENT",
     "END:VCALENDAR",
   ].join("\r\n");

@@ -59,7 +59,7 @@ export default async function ManagePage({ params }: { params: Promise<{ token: 
             })}
             className="mt-5 inline-flex min-h-12 items-center border border-line px-6 text-[0.72rem] uppercase tracking-[0.18em] text-gold hover:border-gold"
           >
-            WhatsApp Yvonnie
+            WhatsApp Vee
           </WhatsAppLink>
         ) : null}
         <ManagePanel token={token} appointment={appointment} today={today} latest={latest} />

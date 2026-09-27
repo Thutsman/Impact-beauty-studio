@@ -34,10 +34,10 @@ export function SiteFooter({ whatsappPhone }: { whatsappPhone?: string | null })
       <div className="mx-auto flex max-w-6xl flex-col gap-4 px-5 py-10 sm:flex-row sm:items-end sm:justify-between">
         <div>
           <p className="font-serif text-2xl text-foreground">Impact Beauty Studio</p>
-          <p className="mt-1 text-sm text-muted">By Yvonnie · Wig installation and makeup</p>
+          <p className="mt-1 text-sm text-muted">By Vee · Wig installation and makeup</p>
           {whatsappPhone ? (
             <WhatsAppLink phone={whatsappPhone} className="mt-3 inline-block text-sm text-gold hover:text-gold-soft">
-              WhatsApp Yvonnie
+              WhatsApp Vee
             </WhatsAppLink>
           ) : null}
         </div>

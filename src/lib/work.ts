@@ -29,18 +29,18 @@ export const heroSlides: HeroSlide[] = [
   {
     src: "/media/wig-installation.jpeg",
     alt: "Wig installation at Impact Beauty Studio",
-    caption: "Wig installation by Yvonnie",
+    caption: "Wig installation by Vee",
     focus: "center 18%",
   },
   {
     src: "/media/studio-portrait-1.jpg",
-    alt: "Yvonnie seated in the studio chair at Impact Beauty Studio",
+    alt: "Vee seated in the studio chair at Impact Beauty Studio",
     caption: "Impact Beauty Studio",
     focus: "center 15%",
   },
   {
     src: "/media/studio-portrait-2.jpg",
-    alt: "Yvonnie in the studio at Impact Beauty Studio",
+    alt: "Vee in the studio at Impact Beauty Studio",
     caption: "Your beauty. Your confidence. Your impact.",
     focus: "center 12%",
   },
@@ -56,7 +56,7 @@ export const beforeAfterWork: BeforeAfterPiece[] = [
     },
     after: {
       src: "/media/makeup-after.jpeg",
-      alt: "The same client after makeup by Yvonnie",
+      alt: "The same client after makeup by Vee",
     },
   },
 ];

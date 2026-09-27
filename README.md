@@ -1,6 +1,6 @@
 # Impact Beauty Studio
 
-Appointment booking for Impact Beauty Studio by Yvonnie. Customers choose a service and a genuinely free time. The studio manages the schedule from a private dashboard.
+Appointment booking for Impact Beauty Studio by Vee. Customers choose a service and a genuinely free time. The studio manages the schedule from a private dashboard.
 
 ## Run locally
 

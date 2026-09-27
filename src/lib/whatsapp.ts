@@ -18,7 +18,7 @@ export function bookingWhatsAppMessage(input: {
   timezone: string;
 }): string {
   return [
-    `Hello Yvonnie, I booked ${input.serviceName}.`,
+    `Hello Vee, I booked ${input.serviceName}.`,
     `${formatLongDate(input.startsAt, input.timezone)}`,
     `${formatClock(input.startsAt, input.timezone)} – ${formatClock(input.endsAt, input.timezone)}`,
     `My name is ${input.customerName}.`,

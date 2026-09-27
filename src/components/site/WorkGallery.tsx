@@ -7,7 +7,7 @@ export function WorkGallery() {
     <section id="work" className="bg-elevated">
       <div className="mx-auto max-w-6xl px-5 py-16 md:py-24">
         <p className="text-[0.72rem] uppercase tracking-[0.28em] text-gold">The work</p>
-        <h2 className="mt-3 max-w-xl font-serif text-4xl text-foreground md:text-5xl">See what Yvonnie does.</h2>
+        <h2 className="mt-3 max-w-xl font-serif text-4xl text-foreground md:text-5xl">See what Vee does.</h2>
         <p className="mt-4 max-w-lg text-sm leading-7 text-muted">
           Makeup and wig installation from the studio. Before and after stay together so the change is clear.
         </p>

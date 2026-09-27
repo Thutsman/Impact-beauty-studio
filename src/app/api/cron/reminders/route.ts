@@ -38,7 +38,7 @@ async function run(request: Request) {
       startsAt: payload.starts_at,
       endsAt: payload.ends_at,
       timezone: payload.timezone ?? "Africa/Johannesburg",
-      displayName: payload.display_name ?? "Impact Beauty Studio by Yvonnie",
+      displayName: payload.display_name ?? "Impact Beauty Studio by Vee",
       manageUrl: `${config.siteUrl}/appointment/manage/${item.manage_token}`,
       priceCents: payload.price_cents,
       currencyCode: payload.currency_code,

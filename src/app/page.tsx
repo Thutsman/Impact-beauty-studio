@@ -6,11 +6,14 @@ import { Button } from "@/components/ui/Button";
 import { formatDuration, formatMoney } from "@/lib/format";
 import { loadPublicContext } from "@/server/public-data";
 import { heroSlides } from "@/lib/work";
+import { menuServices } from "@/lib/services";
 
 export const dynamic = "force-dynamic";
 
 export default async function HomePage() {
   const context = await loadPublicContext();
+  const services = context?.services.length ? context.services : menuServices;
+  const currency = context?.settings.currency_code ?? "USD";
 
   return (
     <PublicFrame>
@@ -41,23 +44,17 @@ export default async function HomePage() {
           <p className="text-[0.72rem] uppercase tracking-[0.28em] text-gold-deep">Services</p>
           <h2 className="mt-3 font-serif text-4xl md:text-5xl">The appointment</h2>
           <hr className="gold-rule mt-6" />
-          {context?.services.length ? (
-            <ul className="mt-10 grid gap-px bg-ink/10 md:grid-cols-3">
-              {context.services.map((service) => (
-                <li key={service.id} className="bg-paper p-6 sm:p-8">
-                  <h3 className="font-serif text-3xl">{service.name}</h3>
-                  <p className="mt-3 text-sm leading-6 text-ink/70">{service.description}</p>
-                  <p className="mt-6 text-[0.72rem] uppercase tracking-[0.16em] text-gold-deep">
-                    {formatDuration(service.duration_minutes)} · {formatMoney(service.price_cents, context.settings.currency_code)}
-                  </p>
-                </li>
-              ))}
-            </ul>
-          ) : (
-            <p className="mt-8 max-w-lg text-sm leading-7 text-ink/70">
-              Services will appear here once the studio catalog is connected.
-            </p>
-          )}
+          <ul className="mt-10 grid gap-px bg-ink/10 md:grid-cols-3">
+            {services.map((service) => (
+              <li key={service.id} className="bg-paper p-6 sm:p-8">
+                <h3 className="font-serif text-3xl">{service.name}</h3>
+                <p className="mt-3 text-sm leading-6 text-ink/70">{service.description}</p>
+                <p className="mt-6 text-[0.72rem] uppercase tracking-[0.16em] text-gold-deep">
+                  {formatDuration(service.duration_minutes)} · {formatMoney(service.price_cents, currency)}
+                </p>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 
