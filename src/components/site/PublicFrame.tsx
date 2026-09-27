@@ -1,11 +1,12 @@
 import Link from "next/link";
 import { Logo } from "@/components/brand/Logo";
 import { WhatsAppLink } from "@/components/site/WhatsAppLink";
+import { MobileNav } from "@/components/site/MobileNav";
 import { loadPublicContext } from "@/server/public-data";
 
 export function SiteHeader({ compact = false }: { compact?: boolean }) {
   return (
-    <header className="border-b border-line bg-background">
+    <header className="relative border-b border-line bg-background">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-4">
         <Link href="/" aria-label="Impact Beauty Studio home">
           <Logo variant={compact ? "compact" : "header"} />
@@ -20,6 +21,7 @@ export function SiteHeader({ compact = false }: { compact?: boolean }) {
           <Link href="/book" className="inline-flex min-h-11 items-center bg-gold px-4 text-[0.72rem] uppercase tracking-[0.16em] text-ink hover:bg-gold-soft">
             Book
           </Link>
+          <MobileNav />
         </nav>
       </div>
     </header>
