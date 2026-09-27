@@ -27,9 +27,11 @@ Open [http://localhost:3000](http://localhost:3000).
 
 After signing in, set prices under Services. The seed catalog is a starting point:
 
-- Wig Installation, 120 minutes
-- Makeup, 90 minutes
-- Wig Installation + Makeup, 210 minutes
+- Wig Installation, 120 minutes, $20
+- Wig Revamp, 60 minutes, $10
+- Full Glam, 90 minutes, $25
+- Soft Glam, 75 minutes, $20
+- Natural Look, 60 minutes, $15
 
 Hours start as Monday and Sunday closed, Tuesday to Saturday 08:00–17:00, in Africa/Johannesburg. Change hours, blocked time, and booking rules from the dashboard. Sample customers and appointments are marked “Sample” and can be deleted.
 

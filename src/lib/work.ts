@@ -18,6 +18,34 @@ export type FilmPiece = {
   caption: string;
 };
 
+export type HeroSlide = {
+  src: string;
+  alt: string;
+  caption: string;
+  focus?: string;
+};
+
+export const heroSlides: HeroSlide[] = [
+  {
+    src: "/media/wig-installation.jpeg",
+    alt: "Wig installation at Impact Beauty Studio",
+    caption: "Wig installation by Yvonnie",
+    focus: "center 18%",
+  },
+  {
+    src: "/media/studio-portrait-1.jpg",
+    alt: "Yvonnie seated in the studio chair at Impact Beauty Studio",
+    caption: "Impact Beauty Studio",
+    focus: "center 15%",
+  },
+  {
+    src: "/media/studio-portrait-2.jpg",
+    alt: "Yvonnie in the studio at Impact Beauty Studio",
+    caption: "Your beauty. Your confidence. Your impact.",
+    focus: "center 12%",
+  },
+];
+
 export const beforeAfterWork: BeforeAfterPiece[] = [
   {
     id: "makeup",

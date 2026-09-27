@@ -1,10 +1,11 @@
-import Image from "next/image";
 import { PublicFrame } from "@/components/site/PublicFrame";
 import { WorkGallery } from "@/components/site/WorkGallery";
+import { Slideshow } from "@/components/site/Slideshow";
 import { Logo } from "@/components/brand/Logo";
 import { Button } from "@/components/ui/Button";
 import { formatDuration, formatMoney } from "@/lib/format";
 import { loadPublicContext } from "@/server/public-data";
+import { heroSlides } from "@/lib/work";
 
 export const dynamic = "force-dynamic";
 
@@ -28,17 +29,7 @@ export default async function HomePage() {
             </div>
           </div>
           <aside className="border border-line bg-elevated">
-            <div className="relative aspect-[3/4] w-full">
-              <Image
-                src="/media/wig-installation.jpeg"
-                alt="Wig installation at Impact Beauty Studio"
-                fill
-                priority
-                className="object-cover object-[center_18%]"
-                sizes="(max-width: 768px) 100vw, 42vw"
-              />
-            </div>
-            <p className="px-5 py-4 text-[0.72rem] uppercase tracking-[0.16em] text-muted">Wig installation by Yvonnie</p>
+            <Slideshow slides={heroSlides} />
           </aside>
         </div>
       </section>
