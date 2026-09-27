@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0e0d0c;
+  --elevated: #161412;
+  --surface: #221e1a;
+  --foreground: #f7f3ec;
+  --muted: #c8c2b8;
+  --gold: #b9975b;
+  --gold-soft: #e7d5b4;
+  --gold-deep: #6d532b;
+  --ink: #141210;
+  --paper: #f6f2eb;
+  --paper-deep: #ebe4d8;
+  --line: rgba(185, 151, 91, 0.4);
+  --danger: #8c3a3a;
+  --ok: #2f5d45;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-elevated: var(--elevated);
+  --color-surface: var(--surface);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-gold: var(--gold);
+  --color-gold-soft: var(--gold-soft);
+  --color-gold-deep: var(--gold-deep);
+  --color-ink: var(--ink);
+  --color-paper: var(--paper);
+  --color-paper-deep: var(--paper-deep);
+  --color-line: var(--line);
+  --color-danger: var(--danger);
+  --color-ok: var(--ok);
+  --font-sans: var(--font-outfit), "Segoe UI", sans-serif;
+  --font-serif: var(--font-cormorant), Georgia, serif;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-sans);
+  background: var(--background);
+  color: var(--foreground);
+}
+
+::selection {
+  background: var(--gold);
+  color: var(--ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--gold-soft);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: none; }
+}
+
+.rise { animation: rise 0.65s ease both; }
+
+.gold-rule {
+  height: 1px;
+  width: 4.5rem;
+  background: var(--gold);
+  border: 0;
+}
+
+input, select, textarea {
+  font: inherit;
+}
+
+input[type="date"],
+input[type="time"],
+input[type="email"],
+input[type="text"],
+input[type="tel"],
+input[type="password"],
+textarea,
+select {
+  width: 100%;
+  min-height: 3rem;
+  border: 1px solid rgba(20, 18, 16, 0.16);
+  background: white;
+  color: var(--ink);
+  padding: 0.75rem 0.9rem;
+  font-size: 1rem;
+}
+
+textarea { min-height: 7rem; resize: vertical; }
